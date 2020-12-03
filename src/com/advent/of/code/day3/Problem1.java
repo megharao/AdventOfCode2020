@@ -12,6 +12,7 @@ public class Problem1 {
         String line = reader.readLine();
         int countTrees = 0;
         int index = 0;
+        //Right 1, down 2 sample
         while(line != null) {
             if(line.charAt(index) == '#') {
                 countTrees++;
