@@ -16,6 +16,12 @@ public class Main {
     public static void main(String[] args) throws IOException {
 //        callDay1();
 //        callDay2();
+//        callDay3();
+        com.advent.of.code.day4.Problem1 prob1 = new com.advent.of.code.day4.Problem1();
+        System.out.println(prob1.findValidPassport("resources/Day4Problem1Input.txt"));
+    }
+
+    private static void callDay3() throws IOException {
         Problem1 prob1 = new Problem1();
         System.out.println(prob1.findNumOfTrees("resources/Day3Problem1Input.txt"));
     }
