@@ -4,6 +4,8 @@ import com.advent.of.code.day1.Day1;
 import com.advent.of.code.day2.Day2;
 import com.advent.of.code.day2.PasswordPolicy;
 import com.advent.of.code.day3.Problem1;
+import com.advent.of.code.day5.Day5;
+import com.advent.of.code.day5.Problem2;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -17,6 +19,15 @@ public class Main {
 //        callDay1();
 //        callDay2();
 //        callDay3();
+//        callDay4();
+        Day5 day5 = new Day5();
+//        com.advent.of.code.day5.Problem1 prob1 = new com.advent.of.code.day5.Problem1();
+//        System.out.println(prob1.getHighestSeatId(day5.readInput("resources/Day5Problem1Input.txt")));
+        Problem2 problem2 = new Problem2();
+        System.out.print(problem2.getMissingSeatId(day5.readInput("resources/Day5Problem1Input.txt")));
+    }
+
+    private static void callDay4() throws IOException {
         com.advent.of.code.day4.Problem1 prob1 = new com.advent.of.code.day4.Problem1();
         System.out.println(prob1.findValidPassport("resources/Day4Problem1Input.txt"));
     }
