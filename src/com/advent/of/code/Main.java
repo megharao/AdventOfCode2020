@@ -20,6 +20,12 @@ public class Main {
 //        callDay2();
 //        callDay3();
 //        callDay4();
+//        callDay5();
+        com.advent.of.code.day6.Problem1 prob1 = new com.advent.of.code.day6.Problem1();
+        System.out.println(prob1.getTotalCountGroupAns("resources/Day6Problem1Input.txt"));
+    }
+
+    private static void callDay5() throws IOException {
         Day5 day5 = new Day5();
 //        com.advent.of.code.day5.Problem1 prob1 = new com.advent.of.code.day5.Problem1();
 //        System.out.println(prob1.getHighestSeatId(day5.readInput("resources/Day5Problem1Input.txt")));
