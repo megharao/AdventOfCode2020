@@ -12,6 +12,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
 
@@ -21,6 +22,18 @@ public class Main {
 //        callDay3();
 //        callDay4();
 //        callDay5();
+//        callDay6();
+//        com.advent.of.code.day7.Problem1 prob1 = new com.advent.of.code.day7.Problem1();
+//        Map<String, List<String>> bagMap = prob1.readInput("resources/Day7Problem1Input.txt");
+//        bagMap.entrySet().stream().forEach(System.out::println);
+//        System.out.println(prob1.getNumOfBags(bagMap, "shiny gold"));
+        com.advent.of.code.day7.Problem2 prob2 = new com.advent.of.code.day7.Problem2();
+        Map<String, List<String>> bagMap = prob2.readInput("resources/Day7Problem1Input.txt");
+        bagMap.entrySet().stream().forEach(System.out::println);
+        System.out.println(prob2.countBags(bagMap, "shiny gold"));
+    }
+
+    private static void callDay6() throws IOException {
         com.advent.of.code.day6.Problem1 prob1 = new com.advent.of.code.day6.Problem1();
         System.out.println(prob1.getTotalCountGroupAns("resources/Day6Problem1Input.txt"));
     }
