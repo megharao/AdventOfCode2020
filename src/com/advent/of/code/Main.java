@@ -6,6 +6,7 @@ import com.advent.of.code.day2.PasswordPolicy;
 import com.advent.of.code.day3.Problem1;
 import com.advent.of.code.day5.Day5;
 import com.advent.of.code.day5.Problem2;
+import com.advent.of.code.day8.Instrn;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -23,6 +24,13 @@ public class Main {
 //        callDay4();
 //        callDay5();
 //        callDay6();
+//        callDay7();
+        com.advent.of.code.day8.Problem1 problem1 = new com.advent.of.code.day8.Problem1();
+        List<Instrn> instrnList = problem1.readInput("resources/Day8Problem1Input.txt");
+        System.out.println(problem1.getGlobalAccValue(instrnList));
+    }
+
+    private static void callDay7() throws IOException {
 //        com.advent.of.code.day7.Problem1 prob1 = new com.advent.of.code.day7.Problem1();
 //        Map<String, List<String>> bagMap = prob1.readInput("resources/Day7Problem1Input.txt");
 //        bagMap.entrySet().stream().forEach(System.out::println);
