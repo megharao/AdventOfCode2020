@@ -25,6 +25,21 @@ public class Main {
 //        callDay5();
 //        callDay6();
 //        callDay7();
+//        callDay8();
+//        callDay9();
+        com.advent.of.code.day10.Problem1 problem1 = new com.advent.of.code.day10.Problem1();
+        problem1.getJoltedDiff("resources/Day10Problem1Input.txt");
+    }
+
+    private static void callDay9() throws IOException {
+        com.advent.of.code.day9.Problem1 prob1 = new com.advent.of.code.day9.Problem1();
+        List<Long> input = prob1.readInput("resources/Day9Problem1Input.txt");
+        Long num = prob1.getNum(input);
+        System.out.println(num);
+        System.out.println(prob1.getSubArraySum(input, num));
+    }
+
+    private static void callDay8() throws IOException {
         com.advent.of.code.day8.Problem1 problem1 = new com.advent.of.code.day8.Problem1();
         List<Instrn> instrnList = problem1.readInput("resources/Day8Problem1Input.txt");
         System.out.println(problem1.getGlobalAccValue(instrnList));
