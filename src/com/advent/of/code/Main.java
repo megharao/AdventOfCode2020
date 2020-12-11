@@ -27,6 +27,21 @@ public class Main {
 //        callDay7();
 //        callDay8();
 //        callDay9();
+//        callDay10();
+//        while(true) {
+//            if(!com.advent.of.code.day11.Problem1.isUpdated()) {
+//                break;
+//            }
+//        }
+        while(true) {
+            if(!com.advent.of.code.day11.Problem1.isUpdated2()) {
+                break;
+            }
+        }
+        com.advent.of.code.day11.Problem1.print();
+    }
+
+    private static void callDay10() throws IOException {
         com.advent.of.code.day10.Problem1 problem1 = new com.advent.of.code.day10.Problem1();
         problem1.getJoltedDiff("resources/Day10Problem1Input.txt");
     }
