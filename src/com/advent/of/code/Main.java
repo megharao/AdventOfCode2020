@@ -1,6 +1,7 @@
 package com.advent.of.code;
 
 import com.advent.of.code.day1.Day1;
+import com.advent.of.code.day12.NavigateFerry;
 import com.advent.of.code.day2.Day2;
 import com.advent.of.code.day2.PasswordPolicy;
 import com.advent.of.code.day3.Problem1;
@@ -28,7 +29,13 @@ public class Main {
 //        callDay8();
 //        callDay9();
 //        callDay10();
-//        while(true) {
+//        callDay11();
+        NavigateFerry navigateFerry = new NavigateFerry();
+        navigateFerry.calculateWaypointDist(navigateFerry.readInput("resources/Day12Input.txt"));
+    }
+
+    private static void callDay11() {
+        //        while(true) {
 //            if(!com.advent.of.code.day11.Problem1.isUpdated()) {
 //                break;
 //            }
