@@ -30,6 +30,12 @@ public class Main {
 //        callDay9();
 //        callDay10();
 //        callDay11();
+//        callDay12();
+        com.advent.of.code.day13.Problem1 prob1 = new com.advent.of.code.day13.Problem1();
+        prob1.readInput("resources/Day13Input.txt");
+    }
+
+    private static void callDay12() throws IOException {
         NavigateFerry navigateFerry = new NavigateFerry();
         navigateFerry.calculateWaypointDist(navigateFerry.readInput("resources/Day12Input.txt"));
     }
