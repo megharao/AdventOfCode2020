@@ -2,6 +2,8 @@ package com.advent.of.code;
 
 import com.advent.of.code.day1.Day1;
 import com.advent.of.code.day12.NavigateFerry;
+import com.advent.of.code.day14.Masking;
+import com.advent.of.code.day15.RambunctiousRecitation;
 import com.advent.of.code.day2.Day2;
 import com.advent.of.code.day2.PasswordPolicy;
 import com.advent.of.code.day3.Problem1;
@@ -9,8 +11,6 @@ import com.advent.of.code.day5.Day5;
 import com.advent.of.code.day5.Problem2;
 import com.advent.of.code.day8.Instrn;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +31,25 @@ public class Main {
 //        callDay10();
 //        callDay11();
 //        callDay12();
+//        callDay13();
+//        callDay14();
+        RambunctiousRecitation ram = new RambunctiousRecitation();
+        List<Integer> input = new ArrayList<>();
+        input.add(8);
+        input.add(11);
+        input.add(0);
+        input.add(19);
+        input.add(1);
+        input.add(2);
+        ram.printNum(input,30000000);
+    }
+
+    private static void callDay14() {
+        System.out.println(Masking.runA(Masking.getInput()));
+        System.out.println(Masking.runB(Masking.getInput()));
+    }
+
+    private static void callDay13() throws IOException {
         com.advent.of.code.day13.Problem1 prob1 = new com.advent.of.code.day13.Problem1();
         prob1.readInput("resources/Day13Input.txt");
     }
