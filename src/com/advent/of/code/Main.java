@@ -4,6 +4,7 @@ import com.advent.of.code.day1.Day1;
 import com.advent.of.code.day12.NavigateFerry;
 import com.advent.of.code.day14.Masking;
 import com.advent.of.code.day15.RambunctiousRecitation;
+import com.advent.of.code.day16.TicketTranslation;
 import com.advent.of.code.day2.Day2;
 import com.advent.of.code.day2.PasswordPolicy;
 import com.advent.of.code.day3.Problem1;
@@ -33,6 +34,11 @@ public class Main {
 //        callDay12();
 //        callDay13();
 //        callDay14();
+//        callDay15();
+        TicketTranslation.problem1("resources/Day16Input.txt");
+    }
+
+    private static void callDay15() {
         RambunctiousRecitation ram = new RambunctiousRecitation();
         List<Integer> input = new ArrayList<>();
         input.add(8);
